@@ -3,20 +3,18 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ComponentAComponent } from './component-a/component-a.component';
-import { ComponentBComponent } from './component-b/component-b.component';
+import { ListComponentComponent } from './list-component/list-component.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentAComponent,
-    ComponentBComponent
+    ListComponentComponent,
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,ListComponentComponent]
 })
 export class AppModule { }
